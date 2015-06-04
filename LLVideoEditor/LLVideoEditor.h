@@ -10,6 +10,7 @@
 @import AVFoundation;
 
 typedef enum : NSUInteger {
+    LLRotateDegree0,
     LLRotateDegree90,
     LLRotateDegree180,
     LLRotateDegree270

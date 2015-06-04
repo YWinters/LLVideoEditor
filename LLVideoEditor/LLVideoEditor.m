@@ -50,6 +50,9 @@
     else if(rotateDegree == LLRotateDegree270) {
         commandCount = 3;
     }
+    else if(rotateDegree == LLRotateDegree0) {
+        commandCount = 4;
+    }
     
     for(NSInteger i = 0; i<commandCount; i++) {
         LLRotateCommand *command = [[LLRotateCommand alloc] initWithVideoData:self.videoData];

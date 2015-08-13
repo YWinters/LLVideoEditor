@@ -149,12 +149,10 @@
     [_exportSession exportAsynchronouslyWithCompletionHandler:^(void ) {
         
         if(completionBlock) {
-            dispatch_async(dispatch_get_main_queue(), ^{
                 AVURLAsset *asset = [[AVURLAsset alloc] initWithURL:exportUrl options:nil];
                 _videoData = [[LLVideoData alloc] initWithAsset:asset];
                 _commands = [NSMutableArray array];
                 completionBlock(_exportSession);
-            });
         }
     }];
 }
